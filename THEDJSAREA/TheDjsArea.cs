@@ -281,7 +281,7 @@ namespace THEDJSAREA
 
                 for (int image = 0; image < 12; image++)
                 {
-                    PictureBox trackImagePictureBox = new PictureBox() { Location = new System.Drawing.Point(xpos, 15), Width = 75, Height = 75, SizeMode = PictureBoxSizeMode.Zoom, ImageLocation = trackImages[image].Replace(".jpg", "-25x25.jpg"), BorderStyle = BorderStyle.FixedSingle, Tag = trackLinks[image] };
+                    PictureBox trackImagePictureBox = new PictureBox() { Location = new System.Drawing.Point(xpos, 15), Width = 75, Height = 75, SizeMode = PictureBoxSizeMode.Zoom, ImageLocation = trackImages[image], BorderStyle = BorderStyle.FixedSingle, Tag = trackLinks[image] };
                     trackImagePictureBox.Click += new EventHandler(this.HandleButtonClick);
                     scrapePanel.Controls.Add(trackImagePictureBox);
                     xpos += 77;
@@ -315,8 +315,8 @@ namespace THEDJSAREA
                     if (item.GetAttribute("href").StartsWith("https://www.filescdn") || item.GetAttribute("href").StartsWith("https://filescdn"))
                     {
                         // We've found the download link! //
-                        MessageBox.Show(item.GetAttribute("href"));
-                        //trackBrowser.Navigate(trackBrowser.Document.Body.GetElementsByTagName("A")[i].GetAttribute("href"));
+                        //MessageBox.Show(item.GetAttribute("href"));
+                        trackBrowser.Navigate(item.GetAttribute("href"));
                     }
                 }
             }

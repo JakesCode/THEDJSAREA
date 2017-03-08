@@ -40,6 +40,7 @@
             this.downloadProgress.Name = "downloadProgress";
             this.downloadProgress.Size = new System.Drawing.Size(512, 55);
             this.downloadProgress.TabIndex = 0;
+            this.downloadProgress.Click += new System.EventHandler(this.downloadProgress_Click);
             // 
             // filesCDNDownloader
             // 

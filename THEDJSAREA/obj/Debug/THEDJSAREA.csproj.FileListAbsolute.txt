@@ -32,3 +32,24 @@ C:\Users\Jake (King of Cool)\Documents\Visual Studio 2015\Projects\THEDJSAREA\TH
 C:\Users\Jake (King of Cool)\Documents\Visual Studio 2015\Projects\THEDJSAREA\THEDJSAREA\bin\Debug\CsQuery.dll
 C:\Users\Jake (King of Cool)\Documents\Visual Studio 2015\Projects\THEDJSAREA\THEDJSAREA\bin\Debug\CsQuery.xml
 C:\Users\Jake (King of Cool)\Documents\Visual Studio 2015\Projects\THEDJSAREA\THEDJSAREA\obj\Debug\THEDJSAREA.Downloader.resources
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\bin\Debug\THEDJSAREA.exe.config
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\bin\Debug\THEDJSAREA.exe.manifest
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\bin\Debug\THEDJSAREA.application
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\bin\Debug\THEDJSAREA.exe
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\bin\Debug\THEDJSAREA.pdb
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\bin\Debug\CsQuery.dll
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\bin\Debug\policy.2.0.taglib-sharp.dll
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\bin\Debug\taglib-sharp.dll
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\bin\Debug\CsQuery.xml
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\bin\Debug\policy.2.0.taglib-sharp.config
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\obj\Debug\Interop.SHDocVw.dll
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\obj\Debug\THEDJSAREA.csproj.ResolveComReference.cache
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\obj\Debug\THEDJSAREA.ArtworkSearch.resources
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\obj\Debug\THEDJSAREA.Downloader.resources
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\obj\Debug\THEDJSAREA.TheDjsArea.resources
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\obj\Debug\THEDJSAREA.Properties.Resources.resources
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\obj\Debug\THEDJSAREA.csproj.GenerateResource.Cache
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\obj\Debug\THEDJSAREA.exe.manifest
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\obj\Debug\THEDJSAREA.application
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\obj\Debug\THEDJSAREA.exe
+C:\Users\Jake (School)\Documents\GitHub\THEDJSAREA\THEDJSAREA\obj\Debug\THEDJSAREA.pdb

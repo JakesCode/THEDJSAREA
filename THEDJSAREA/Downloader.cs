@@ -21,40 +21,48 @@ namespace THEDJSAREA
 
         private void filesCDNDownloader_DoWork(object sender, DoWorkEventArgs e)
         {
-            try
+            if(filename == "")
             {
-                downloadingLabel.Text = "Now Downloading: " + filename;
-
-                System.Net.HttpWebRequest request = (System.Net.HttpWebRequest)System.Net.WebRequest.Create(URLToDownload);
-                System.Net.HttpWebResponse response = (System.Net.HttpWebResponse)request.GetResponse();
-                response.Close();
-                long iSize = response.ContentLength;
-
-                long iRunningByteTotal = 0;
-                WebClient client = new WebClient();
-                Stream strRemote = client.OpenRead(URLToDownload);
-                FileStream strLocal = new FileStream(saveTo, FileMode.Create, FileAccess.Write, FileShare.None);
-                int iByteSize = 0;
-                byte[] byteBuffer = new byte[1024];
-
-                while ((iByteSize = strRemote.Read(byteBuffer, 0, byteBuffer.Length)) > 0)
+                MessageBox.Show("Test");
+            } else
+            {
+                try
                 {
-                    strLocal.Write(byteBuffer, 0, iByteSize);
-                    iRunningByteTotal += iByteSize;
-                    double dIndex = (double)(iRunningByteTotal);
-                    double dTotal = (double)iSize;
-                    double dProgressPercentage = (dIndex / dTotal);
-                    int iProgressPercentage = (int)(dProgressPercentage * 100);
-                    filesCDNDownloader.ReportProgress(iProgressPercentage);
+                    downloadingLabel.Text = "Now Downloading: " + filename;
+
+                    System.Net.HttpWebRequest request = (System.Net.HttpWebRequest)System.Net.WebRequest.Create(URLToDownload);
+                    System.Net.HttpWebResponse response = (System.Net.HttpWebResponse)request.GetResponse();
+                    response.Close();
+                    long iSize = response.ContentLength;
+
+                    long iRunningByteTotal = 0;
+                    WebClient client = new WebClient();
+                    Stream strRemote = client.OpenRead(URLToDownload);
+                    FileStream strLocal = new FileStream(saveTo, FileMode.Create, FileAccess.Write, FileShare.None);
+                    int iByteSize = 0;
+                    byte[] byteBuffer = new byte[1024];
+
+                    while ((iByteSize = strRemote.Read(byteBuffer, 0, byteBuffer.Length)) > 0)
+                    {
+                        strLocal.Write(byteBuffer, 0, iByteSize);
+                        iRunningByteTotal += iByteSize;
+                        double dIndex = (double)(iRunningByteTotal);
+                        double dTotal = (double)iSize;
+                        double dProgressPercentage = (dIndex / dTotal);
+                        int iProgressPercentage = (int)(dProgressPercentage * 100);
+                        filesCDNDownloader.ReportProgress(iProgressPercentage);
+                    }
+
+                    strRemote.Close();
+                    status = true;
                 }
+                catch
+                {
 
-                strRemote.Close();
-                status = true;
+                }
             }
-            catch
-            {
 
-            }
+            
             
         }
 
@@ -72,6 +80,11 @@ namespace THEDJSAREA
             {
                 GC.Collect();
             }
+        }
+
+        private void downloadProgress_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
